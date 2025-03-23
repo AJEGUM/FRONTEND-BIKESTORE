@@ -1,0 +1,117 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor_principal{
+    background-color: rgba(0, 0, 0, 0.438);
+    width: 500px;
+    height: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 10%);
+    z-index: 2;
+    border-radius: 30px;
+    text-align: center;
+    border: rgb(255, 255, 255) 2px solid ;
+    box-shadow: 0px 0px 20px #000000;
+
+    opacity: 0;
+    animation-name: formulario;
+    animation-duration: 1s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.contenedor_secundario{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    color: #fff;
+    backdrop-filter: blur(3px);
+}
+
+.titulo{
+    padding-top: 10px;
+    width: 500px;
+    height: 100px;
+}
+
+h1{
+    font-size: 60px;
+}
+
+form{
+    padding: 20px 0px;
+}
+
+.entradaDatos{
+    margin-top: 10px;
+}
+
+.entradaDatos input{
+    width: 200px;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.texto{
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+button{
+    width: 85px;
+    height: 30px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+
+
+
+button a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+p{
+    padding-top: 20px;
+    opacity: 0;
+    animation-name: parrafo;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+video{
+    position: absolute;
+    contain:content;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+@keyframes formulario{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes parrafo{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

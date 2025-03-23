@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Clientes</title>
+    <link rel="stylesheet" href="/style/cliente_styles.css">
+</head>
+<body>
+    <div class="container">
+        <button id="btnCrear" class="btn btn-primary">Crear Cliente</button>
+        <button id="btnRegresar" class="btn btn-regresar"><a href="interfazAdmin.html" target="">Regresar</a></button>
+        <table id="tablaClientes">
+            <thead>
+                <tr>
+                    <th class="visually-hidden">ID</th>
+                    <th>Nombre</th>
+                    <th>Cedula</th>
+                    <th>Telefono</th>
+                    <th>Correo</th>
+                    <th>Estatura</th>
+                    <th>Edad</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+
+    <div id="modalCliente" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5>Cliente</h5>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <form id="formCLiente">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input id="nombre" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cedula">Cedula:</label>
+                        <input id="cedula" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="telefono">Telefono:</label>
+                        <input id="telefono" type="text" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="correo">Correo Electronico:</label>
+                        <input id="correo" type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="estatura">Estatura:</label>
+                        <input id="estatura" type="number" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input id="edad" type="number" required>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secundary close-btn">Cerrar</button>
+                        <button type="submit" class="btn btn-success">Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/scripts/clientes_code.js"></script>
+</html>

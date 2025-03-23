@@ -1,0 +1,219 @@
+/*ESTILOS GENERALES DE LA PAGINA*/
+.visually-hidden{
+    position: absolute !important;
+    width: 90vw !important;
+    height: 1vh !important;
+    padding:  1.5rem !important;
+    margin: 1vh !important;
+    overflow: hidden !important;
+    clip: rect(0,0,0,0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+}
+
+body{
+    background-color: #f0f2f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 1.5rem;
+}
+
+.container{
+    max-width: 90vw;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: white;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.125rem 0.75rem rgba(0, 0, 0, 0.08);
+}
+
+/*ESTILOS A LOS BOTONES*/
+.btn{
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.375rem;
+    cursor: pointer;
+    font-size: 0.875rem;
+    font-weight: 500;
+    transition: all 200 ease;
+}
+
+.btn:hover{
+    transform: translate(-0.0625rem);
+    box-shadow: 0 0.125rem rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary{
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-primary:hover{
+    background-color: #2980b9;
+}
+
+.btn-secundary{ 
+    background-color: #95a5a6;
+    color: white;
+}
+.btn-secundary:hover{
+    background-color: #7f8c8d;
+}
+
+.btn-success{
+    background-color: #2ecc71;
+    color: white;
+}
+
+.btn-success:hover{
+    background-color: #27ae60;
+}
+/*BOTONES CREADOS DESDE EL ARCHIVO JAVASCRIPT*/
+
+.btn-danger{
+    background-color: #95a5a6;
+    color: white;
+    margin-left: 0.05rem;
+}
+
+.btn-danger:hover{
+    background-color: #7f8c8d;
+}
+
+.btnEditar{
+    background-color: #74b9ff;
+    color: white;
+}
+
+.btnEditar:hover{
+    background-color: #0984e3;
+}
+
+/*ESTILOS PARA LAS TABLAS*/
+
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    margin-top: 1.5rem;
+    box-shadow: 0 0.0625rem 0.1875rem rgb(0, 0, 0, 0.1);
+}
+
+thead{
+    background-color: #5c656e;
+    color: white;
+    border-radius: 1.25rem;
+}
+
+th, td{
+    padding: 0.625rem;
+    text-align: center;
+    border: none;
+    border-bottom: 0.0625rem solid #eee;
+}
+
+th{
+    font-weight: 600;
+}
+
+tr:hover{
+    background-color: #d0d0d0;
+}
+
+/*ESTILOS A LOS MODALES*/
+.modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(0.25rem);
+}
+
+.modal-content{
+    background-color: white;
+    margin: 2vh auto;
+    padding: 1rem;
+    width: 90%;
+    max-width: 40.25rem;
+    max-height: 80vh;
+    border-radius: 0 0.25rem 1.5rem rgba(0, 0, 0, 0.1);
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn{
+    from{
+        transform: translate(-1.25rem);
+        opacity: 0;
+    }
+    to{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+.modal-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.0625rem solid #eee;
+    padding-bottom: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+.modal-header h5{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0;
+}
+
+.close{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: #95a5a6;
+    transition: color 200ms ease;
+}
+
+.close:hover{
+    color: #2c3350;
+}
+
+/*ESTILOS A LOS FORMULARIOS*/
+
+.form-group{
+    margin-bottom: 1.25rem;
+}
+
+.form-group label{
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.form-group input{
+    width: 100%;
+    padding: 0.0925rem;
+    border: 0.0625rem solid #ddd;
+    font-size: 0.875rem;
+    transition: border-color 200ms ease;
+}
+
+.form-group input:focus{
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0, 0, 0, 0.1875rem rgba(52, 152, 219, 0.1);
+}
+
+.modal-footer{
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+    border-top: 0.625rem solid #eee ;
+    text-align: right;
+    gap: 0.625rem;
+    display: flex;
+    justify-content: flex-end;
+}

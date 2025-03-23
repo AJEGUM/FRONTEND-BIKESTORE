@@ -1,0 +1,342 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    opacity: 0;
+    animation-name: body;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+
+main{
+    z-index: 0;
+    position: relative;
+}
+
+/*NAVBAR*/
+nav{
+    background-color: rgb(135, 155, 155);
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+/*ESTILOS DE TITULO*/
+
+nav .titulo{
+    padding: 0px 50px;
+    font-size: 24px;
+    color: #000;
+    text-decoration: none;
+}
+
+nav .titulo:hover{
+
+    text-shadow: 2px 0px 10px rgba(0, 0, 0, 0.6);
+    color: #000;
+}
+
+/*ESTILOS DE UL*/
+nav ul{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0 40px; 
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav a:hover{
+    color: rgb(0, 102, 255);
+}
+
+/*ESTILOS DE BUSCADOR*/
+nav input{
+    width: 400px;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0 20px;
+}
+
+h2{
+    z-index: 1;
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+    
+/* ---------------------------------------------------------------------- */
+/*ESTILOS DE IMAGEN*/
+.contenedor_img{
+    top: 150px;
+    width: 1000px;
+    height: 300px; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+}
+
+/* ---------------------------------------------------------------------- */    
+/*ESTILOS DE IMG PRINCIPAL*/
+.contenedor_img img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover; /*Mantiene la proporción de la imagen*/
+}
+
+/* ---------------------------------------------------------------------- */
+/*ESTILOS DEL TITULO "LO MAS VENDIDO"*/
+.titulo_principales{
+    text-align: center;
+    top: 450px;
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;  
+}
+
+/* ---------------------------------------------------------------------- */
+/*CONTENEDORES ES EL ENCARGADO DE MANTENER LOS 3 CONTENEDORES PRINCIPALES DE LA PAGINA DE INICIO (INDEX.HTML)*/
+.contenedores{
+    display: flex;        
+    gap: 20px;
+    top: 550px;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;  
+    /*border: 3px solid #000000; BORDE DEL CONTENEDOR*/
+}
+
+/*CONTENEDOR HIJO DEL CONTENEDOR "CONTENEDORES"*/
+.contenedor1{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+
+.contenedor2{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+
+.contenedor3{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+
+/*ESTILOS DEL LOS TEXTOS*/
+.estilo .parrafo1{
+    font-weight: bold;
+    font-size: 34px;
+    color: #000;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* ---------------------------------------------------------------------- */
+/*ESTILOS DEL TITULO "CATALOGO" (titulo en un contenedor)*/
+.titulo2_principales2{
+    text-align: center;
+    top: 950px;
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;  
+}
+
+/* ---------------------------------------------------------------------- */
+/*CATALOGO*/
+
+.catalogo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    top: 1050px;
+    width: 1000px;
+    height: 650px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;  
+}
+
+.contenedor1_catalogo{
+    width: 660px;
+    height: 200px;
+    background-color: #998a8a;   
+}
+
+.contenedor2_catalogo{
+    width: 320px;
+    height: 200px;
+    background-color: #8a3030;
+    margin-left: auto;
+}
+
+.contenedor3_catalogo{
+    width: 320px;
+    height: 200px;
+    background-color: #df8888;
+    margin-left: 0;
+    margin-top: 20px;
+}
+
+.contenedor4_catalogo{
+    width: 320px;
+    height: 200px;
+    background-color: #521313;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.contenedor5_catalogo{
+    width: 320px;
+    height: 200px;
+    background-color: #000;
+    margin-left: auto;
+    margin-top: 20px;
+}
+
+.contenedor6_catalogo{
+    width: 100%;
+    height: 200px;
+    background-color: #998a8a; 
+    margin-top: 20px;
+}
+
+.catalogo .estilo, .contenedores .estilo, .contenedores_lo_mas_vendido .estilo, .contenedor_img .estilo{
+    border-radius: 20px;
+}
+
+
+.titulo3_principales3{
+    text-align: center;
+    top: 1700px;
+    width: 1000px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;  
+}
+
+/* ---------------------------------------------------------------------- */
+/*LO MAS VENDIDO*/
+.contenedores_lo_mas_vendido{
+    display: flex;        
+    gap: 20px;
+    top: 1800px;
+    width: 1000px;
+    height: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;  
+    /*border: 3px solid #000000; BORDE DEL CONTENEDOR*/
+}
+
+.contenedor1_lo_mas_vendido{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+/*CONTENEDOR HIJO DEL CONTENEDOR "CONTENEDORES"*/
+.contenedor2_lo_mas_vendido{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+
+/*CONTENEDOR HIJO DEL CONTENEDOR "CONTENEDORES"*/
+.contenedor3_lo_mas_vendido{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+
+.contenedor4_lo_mas_vendido{
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    width: 323px;
+    height: 400px;
+    background-color: rgb(96, 110, 110);
+}
+
+/*ESTILOS DEL LOS TEXTOS "LO MAS VENDIDO"*/
+.contenedores_lo_mas_vendido .estilo .parrafo1{
+    font-weight: bold;
+    font-size: 34px;
+    color: #000;
+}
+
+/*FOOTER*/
+.footer{
+    top: 2300px;
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    z-index: 0;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+@keyframes body{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

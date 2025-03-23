@@ -1,0 +1,113 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    opacity: 0;
+
+    animation-name: contenedores;
+    animation-duration: 1s;
+    animation-delay: 0.3s;
+    animation-fill-mode: forwards;
+}
+
+h1{
+    text-align: center;
+    font-size: 60px;
+    opacity: 1;
+}   
+
+.contenedor_padre{
+    display: flex;
+    justify-content: center;
+    column-gap: 30px;
+    opacity: 1;
+    text-align: center;
+ 
+}
+
+.contenedor_padre p{
+    font-size: 25px;
+    text-decoration: none;
+}
+
+.contenedor1{
+    width: 250px;
+    height: 350px;
+    background-color: #a03b3b;
+    border-radius: 20px;
+}
+
+.contenedor1:hover{
+    width: 260px;
+    height: 360px;
+}
+
+.CrearCliente{
+    padding-top: 50%;
+    font-size: 20px;
+    color: white;
+    
+}
+
+.contenedor2{
+    width: 250px;
+    height: 350px;
+    background-color: #942e2e;
+    border-radius: 20px;
+}
+
+.contenedor2:hover{
+    width: 260px;
+    height: 360px;
+}
+
+.crearProductoActualizar{
+    padding-top: 50%;
+    font-size: 20px;
+    color: white;
+    margin-left: 15px;    
+}
+
+.contenedor3{
+    width: 250px;
+    height: 350px;
+    background-color: #d47878;
+    border-radius: 20px;
+}
+
+.contenedor3:hover{
+    width: 260px;
+    height: 360px;
+}
+
+.crearReportes{
+    padding-top: 50%;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.boton{
+    text-align: center;
+    margin-top: 60px;
+}
+.boton button{
+    width: 100px;
+    height: 30px;
+    border-radius: 5px; 
+}
+
+
+
+
+
+@keyframes contenedores{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
