@@ -15,7 +15,20 @@
                 <li><a href="pagina.html">HOME</a></li>
                 <li><a href="productosCliente.html">PRODUCTOS</a></li>
                 <li><a href="nosotros.html">NOSOTROS</a></li>
-                <li><a href="#">CARRITO</a></li>
+                <li><a class="carrito" href="#"><span>CARRITO</span></a>
+                    <div class="cart-menu">
+                        <div class="cart-header">
+                            <h3>Carrito de Compras</h3>
+                        </div>
+                        <div class="cart-items">
+                            <!-- Los items del carrito se agregarán dinámicamente -->
+                        </div>
+                        <div class="cart-total">
+                            <p>Total: $<span class="total-amount">0.00</span></p>
+                            <a href="index.html"><button class="checkout-btn">Ir a Pagar</button></a>
+                        </div>
+                    </div>
+                </li>
             </ul>
         </nav>  
    </div>
@@ -42,9 +55,15 @@
         <div class="titulo2_principales2"><h1>CATALOGO</h1></div>
         
         <div class="catalogo">
-            <div class="contenedor1_catalogo estilo"></div>
-            <div class="contenedor2_catalogo estilo"></div>
-            <div class="contenedor3_catalogo estilo"></div>
+            <div class="contenedor1_catalogo estilo">
+                <a href="productosCliente.html"><img class="estilo" src="/img/img2.jpg" alt="Bike 2"></a>
+            </div>
+            <div class="contenedor2_catalogo estilo">
+                <a href="productosCliente.html"><img class="estilo" src="/img/img3.jpg" alt="Bike 3"></a>
+            </div>
+            <div class="contenedor3_catalogo estilo">
+                <a href="productosCliente.html"><img class="estilo" src="/img/img4.jpg" alt="Bike 4"></a>
+            </div>
             <div class="contenedor4_catalogo estilo"></div>
             <div class="contenedor5_catalogo estilo"></div>
             <div class="contenedor6_catalogo estilo"></div>
@@ -71,6 +90,6 @@
     <div class="footer">
 
     </div>
-    
+    <script src="/js/cart.js"></script>
 </body>
 </html>
