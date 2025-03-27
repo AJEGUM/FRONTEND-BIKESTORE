@@ -8,8 +8,59 @@
 </head>
 <body>
     <div class="contenedor">
-        <h1>Agregar o Actualiza </h1>
+        <h1>Agregar Producto</h1>
+
+        <p>Nombre</p>
+        <input class="nombre" type="text" placeholder="Nombre del Producto">
+
+        <p>Talla / Componentes</p>
+        <select name="talla" id="talla">
+            <option value="">Elegir</option>
+            <option value="s">S</option>
+            <option value="m">M</option>
+            <option value="l">L</option>
+            <option value="xl">XL</option>
+            <option value="componenetes">Componentes</option>
+        </select>
+
+        <p>Precio</p>
+        <input type="number" step="0.01" min="0" placeholder="Precio del Producto">
+
+        <p>Cantidad</p>
+        <input type="number" min="1" placeholder="Cantidad del Producto">
+
+        <p>Imagen</p>
+        <input type="file" id="imagen" placeholder="Imagen del Producto">
+
+        
         <button>Crear</button>
+
+    </div>
+
+    <div class="buscar">
+        <h1 class="titulo">Buscar Producto</h1>
+        <input type="number" placeholder="ID del Producto">
+        <button>Buscar</button>
+
+        <div class="producto_buscado">
+            <div class="card">
+                <img src="/img/img4.jpg" alt="">
+                <input type="text" placeholder="Actualizar Nombre del Producto">
+                <select name="talla_actualizada" id="">
+                    <option value="">Actualizar Talla</option>
+                    <option value="s">S</option>
+                    <option value="m">M</option>
+                    <option value="l">L</option>
+                    <option value="xl">XL</option>
+                </select>
+                <input type="number" step="0.01" min="0" placeholder="Actualizar Precio del Producto">
+                <input type="number" min="1" placeholder="Actualizar Cantidad del Producto">
+                <input type="file" id="imagen" placeholder="Actualizar Imagen del Producto">
+                <button class="Actualizar">Actualizar</button>
+                <button class="Eliminar">Eliminar</button>
+            </div>
+        </div>
+
 
     </div>
 </body>

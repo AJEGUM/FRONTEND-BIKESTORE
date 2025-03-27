@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/productosCliente.css">
+    <link rel="stylesheet" href="./style/productosCliente.css">
+    <link rel="stylesheet" href="/style/navBar.css">
+    <link rel="stylesheet" href="/style/carrito.css">
     <title>Productos</title>
 </head>
 <body>
@@ -16,6 +18,7 @@
                 <li><a href="productosCliente.html">PRODUCTOS</a></li>
                 <li><a href="nosotros.html">NOSOTROS</a></li>
                 <li><a class="carrito" href="#"><span>CARRITO</span></a>
+
                     <div class="cart-menu">
                         <div class="cart-header">
                             <h3>Carrito de Compras</h3>
@@ -25,7 +28,7 @@
                         </div>
                         <div class="cart-total">
                             <p>Total: $<span class="total-amount">0.00</span></p>
-                            <button class="checkout-btn">Ir a Pagar</button>
+                            <a href="index.html"><button class="checkout-btn">Ir a Pagar</button></a>
                         </div>
                     </div>
                 </li>
@@ -61,11 +64,20 @@
             </div>
 
             <div class="productos">
-               
+                <div class="card">
+                    <img src="/img/img4.jpg" alt="">
+                    <p class="parrafo_productos">Montain Bike Pro 2026</p>
+                    <p class="parrafo_productos">Talla S</p>
+                    <p class="parrafo_productos precio">$1000</p>
+                    <button class="btn">Agregar al carrito</button>
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                
             </div>
         </div>
         
    </main>
-   <script src="/js/cart.js"></script>
+   <script src="/scripts/cart.js"></script>
 </body>
 </html>

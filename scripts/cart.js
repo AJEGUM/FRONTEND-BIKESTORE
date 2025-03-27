@@ -14,5 +14,5 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!cartMenu.contains(e.target) && !cartIcon.contains(e.target)) {
             cartMenu.classList.remove('active');
         }
-    });
+    });  
 });
