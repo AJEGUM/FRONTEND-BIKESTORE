@@ -1,3 +1,7 @@
+const btn_agregar_producto = document.getElementById("btn_agregar_carrito")
+
+
+
 // Esperar a que el DOM esté completamente cargado
 document.addEventListener('DOMContentLoaded', function() {
     const cartIcon = document.querySelector('.carrito');
@@ -16,3 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });  
 });
+
+
+
